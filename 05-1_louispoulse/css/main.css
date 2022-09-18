@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HSBombaram';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/HSBombaram.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    outline: 1px solid rgb(163, 206, 184);
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mv {
+    display: flex;
+}
+
+.m_right {
+    flex: auto;
+}
+
+.gnb {
+    flex-shrink: 0;
+    height: 100vh;
+    width: 200px;
+    background: #000;
+    color: #fff;
+    padding: 0 30px;
+}
+
+.gnb a {
+    display: block;
+}
+
+.gnb>ul {
+    position: relative;
+}
+
+.gnb>ul>li {
+    margin: 0 0 15px 0;
+}
+
+.gnb>ul>li>ul {
+    position: absolute;
+    top: 0;
+    left: 170px;
+    width: 0;
+    height: 100vh;
+    overflow: hidden;
+    color: #222;
+    z-index: 999;
+}
+
+.gnb>ul>li>ul::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    height: 100vh;
+    width: 0;
+    background: rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+    z-index: 997;
+}
+
+.gnb>ul>li:hover>ul {
+    width: 250px;
+}
+
+.gnb>ul>li:hover>ul::before {
+    width: 250px;
+}
+
+.gnb>ul>li>ul>li {
+    padding: 0 30px;
+    margin: 0 0 10px 0;
+}
+
+header .top {
+    display: flex;
+    justify-content: space-around;
+    line-height: 100px;
+}
+
+header .top h1 {
+    width: 150px;
+    font-size: 0;
+}
+
+header .top .right {
+    display: flex;
+}
+
+header .top .right ul {
+    display: flex;
+    gap: 30px;
+    font-size: 15px;
+}
+
+header .top .right input[type="text"] {
+    outline: none;
+    border: none;
+    width: 150px;
+    padding: 3px 0;
+    margin-left: 30px;
+}
+
+header .top input[type="text"]::placeholder {
+    border-bottom: 1px solid #333;
+    padding: 5px 10px;
+    font-size: 13px;
+    letter-spacing: 5px;
+}
+
+header .top input[type="text"]:focus::placeholder {
+    color: transparent;
+}
+
+header .top button {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 19px;
+}
+
+.main_visual {
+    position: relative;
+}
+
+.main_visual .main_bg {
+    background: url(../img/main_visual_bg.webp)no-repeat center center/cover;
+    height: calc(100vh - 100px);
+    filter: grayscale(1);
+    opacity: 0.5;
+}
+
+.main_visual video {
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+    border-radius: 50% 50% 0 0;
+}
+
+.main_visual .video {
+    position: relative;
+}
+
+.main_visual .video::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    /* border: 5px solid #f33; */
+    display: block;
+    background: #333;
+}

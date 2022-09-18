@@ -2,7 +2,7 @@
 
 * {
     font-family: 'Hahmlet', serif;
-    outline: 1px solid rgb(196, 238, 222);
+    outline: 1px solid rgb(196, 238, 222)-;
 }
 
 .Wrap {
@@ -98,7 +98,7 @@ header .gnb>ul>li:last-child {
 
 header .gnb>ul>li>ul {
     position: absolute;
-    top: 52px;
+    top: 51px;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
@@ -185,9 +185,40 @@ header .gnb>ul>li a {
     border-top: 2px solid #fff;
 }
 
+/* brand */
+.brand {
+    padding: 150px 0 100px 0;
+}
+
+.brand .container {
+    display: flex;
+    gap: 50px;
+}
+
+.brand .left {
+    flex: 1;
+}
+
+.brand .right {
+    flex: 1;
+    margin: auto 0;
+}
+
+.brand .right h2 {
+    margin: 0 0 50px 0;
+    color: #f1f1f1;
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.brand .right p {
+    line-height: 1.4;
+    margin: 0 0 20px 0;
+}
+
 /* best_seller */
 .best_seller {
-    padding: 100px 0;
+    padding: 50px 0 100px 0;
 }
 
 .best_seller h2 {
@@ -272,10 +303,16 @@ header .gnb>ul>li a {
 }
 
 /* seasonal_gift */
+.seasonal_gift {
+    padding: 50px 0 100px 0;
+}
+
+.seasonal_gift .sg_top {
+    margin: 0 0 100px 0;
+}
 
 .seasonal_gift .sg_top,
 .seasonal_gift .sg_bottom {
-    padding: 100px 0;
     display: flex;
     gap: 50px;
 }
@@ -516,7 +553,7 @@ header .gnb>ul>li a {
 /* lesson_lab */
 .lesson_lab {
     position: relative;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
 }
 
 .lesson_lab h2 {
@@ -548,6 +585,10 @@ header .gnb>ul>li a {
     position: relative;
     flex: 1;
     overflow: hidden;
+}
+
+.lesson_lab .container .down {
+    transform: translateY(50px);
 }
 
 .lesson_lab .container .lesson_txt {
