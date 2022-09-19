@@ -12,8 +12,16 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'RixInooAriDuriR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2207-01@1.0/RixInooAriDuriR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     outline: 1px solid rgb(163, 206, 184);
+    font-family: 'Pretendard-Regular';
 }
 
 .container {
@@ -21,7 +29,8 @@
     margin: 0 auto;
 }
 
-.mv {
+/* main_v */
+.main_v {
     display: flex;
 }
 
@@ -30,12 +39,14 @@
 }
 
 .gnb {
-    flex-shrink: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    width: 200px;
     background: #000;
     color: #fff;
-    padding: 0 30px;
+    padding: 0 60px;
 }
 
 .gnb a {
@@ -43,52 +54,44 @@
 }
 
 .gnb>ul {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    letter-spacing: 3px;
 }
 
 .gnb>ul>li {
-    margin: 0 0 15px 0;
+    font-size: 17px;
 }
 
-.gnb>ul>li>ul {
+.gnb>ul>li ul {
     position: absolute;
     top: 0;
-    left: 170px;
+    left: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
     width: 0;
     height: 100vh;
     overflow: hidden;
     color: #222;
+    background: rgba(255, 255, 255, 0.8);
     z-index: 999;
-}
-
-.gnb>ul>li>ul::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    height: 100vh;
-    width: 0;
-    background: rgba(0, 0, 0, 0.3);
     transition: 0.5s;
-    z-index: 997;
 }
 
-.gnb>ul>li:hover>ul {
-    width: 250px;
+.gnb>ul>li:hover ul {
+    width: 350px;
 }
 
-.gnb>ul>li:hover>ul::before {
-    width: 250px;
-}
-
-.gnb>ul>li>ul>li {
+.gnb>ul>li ul>li {
     padding: 0 30px;
-    margin: 0 0 10px 0;
 }
 
 header .top {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     line-height: 100px;
 }
 
@@ -135,32 +138,240 @@ header .top button {
 
 .main_visual {
     position: relative;
-}
-
-.main_visual .main_bg {
-    background: url(../img/main_visual_bg.webp)no-repeat center center/cover;
     height: calc(100vh - 100px);
-    filter: grayscale(1);
-    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.main_visual video {
+.main_visual::before {
+    content: "";
+    background-image: url(../img/main_visual_bg.jpg);
+    background-size: cover;
     position: absolute;
-    top: 50%;
-    right: 100px;
-    transform: translateY(-50%);
-    border-radius: 50% 50% 0 0;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.3;
 }
 
-.main_visual .video {
+.main_visual .inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    color: #111;
+}
+
+.main_visual .inner .des {
     position: relative;
 }
 
-.main_visual .video::after {
+.main_visual .inner .des::after {
+    position: absolute;
+    bottom: -15px;
+    left: 0;
     content: "";
-    width: 50px;
-    height: 50px;
-    /* border: 5px solid #f33; */
     display: block;
+    width: 120%;
+    height: 3px;
     background: #333;
+}
+
+.main_visual .inner span {
+    display: inline-block;
+    margin: 0 0 20px 0;
+}
+
+.main_visual .inner h2 {
+    margin: 0 0 50px 0;
+    font-family: 'HSBombaram';
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.main_visual .inner p {
+    line-height: 1.4;
+}
+
+.main_visual .inner video {
+    border-radius: 50% 50%;
+}
+
+/* categories */
+.categories {
+    padding: 150px 0 100px 0;
+}
+
+.categories .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories figure {
+    position: relative;
+    width: 180px;
+    border-radius: 50%;
+    /* box-shadow: 0 0 2px #111; */
+    background: #f9f9f9;
+    margin: 0 0 20px 0;
+}
+
+.categories figure::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    width: 110%;
+    height: 110%;
+    border: 3px solid #ddd;
+    border-radius: 50%;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.categories figure:hover::after {
+    opacity: 1;
+}
+
+.categories .itm p {
+    text-align: center;
+    font-family: 'HSBombaram';
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/* show */
+.show {
+    padding: 70px 0 100px 0;
+}
+
+.show .container .box:nth-child(1){
+    margin: 0 0 150px 0;
+}
+
+.show .box {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.show .thumb figure {
+    position: relative;
+    width: 500px;
+}
+
+.show .thumb figure::after {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #333;
+    border-radius: 0 35% 0 0;
+}
+
+.show .thumb img {
+    border-radius: 0 35% 0 0;
+}
+
+.show .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.show .top .content .txt {
+    text-align: end;
+}
+
+.show .content h2 {
+    margin: 0 0 30px 0;
+    font-family: 'HSBombaram';
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+
+.show .content h2 span {
+    display: inline-block;
+    margin: 10px 0 0 0;
+    text-shadow: 0 0 1px #000;
+    color: #fff;
+    font-family: 'HSBombaram';
+}
+
+.show .content .txt a {
+    font-size: 15px;
+    font-weight: 600;
+    color: #999;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.show .content .txt a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #999;
+    margin: 5px 0 0 0;
+    transition: 0.5s;
+}
+
+.show .content .txt a:hover {
+    color: #111;
+}
+
+.show .content .txt a:hover::after {
+    background: #111;
+}
+
+.show .content .itm_slide figure {
+    padding: 0 15px;
+    text-align: center;
+}
+
+.show .content .itm_slide img {
+    margin: 0 0 25px 0;
+}
+
+.show .content .itm_slide p {
+    margin: 0 0 10px 0;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.show .content .itm_slide strong {
+    margin: 0 0 20px 0;
+    display: block;
+    color: #999;
+}
+
+.show .content .itm_slide a {
+    margin: 0 0 20px 0;
+    display: inline-block;
+    color: #999;
+    font-weight: 500;
+    transition: 0.5s;
+    text-decoration: underline overline ;
+    text-underline-position: under;
+}
+
+
+.show .content .itm_slide a:hover {
+    color: #111;
+}
+
+.show .content .itm_slide a:hover::after {
+    background: #111;
+}
+
+.shox .second .content .txt{
+    text-align: start;
 }
