@@ -277,15 +277,15 @@ header .top button {
     overflow: hidden;
 }
 
-.col .box .content .txt {
-    margin: 0 0 120px 0;
+.col .box .content .tit {
+    margin: 0 0 80px 0;
 }
 
-.col .top .content .txt {
+.col .top .content .tit {
     text-align: end;
 }
 
-.col .content .txt h2 {
+.col .content .tit h2 {
     margin: 0 0 30px 0;
     font-family: 'HSBombaram';
     font-size: 50px;
@@ -293,7 +293,7 @@ header .top button {
     letter-spacing: 5px;
 }
 
-.col .content .txt h2 span {
+.col .content .tit h2 span {
     display: inline-block;
     margin: 10px 0 0 0;
     text-shadow: 0 0 1px #000;
@@ -301,15 +301,15 @@ header .top button {
     font-family: 'HSBombaram';
 }
 
-.col .content .txt a {
+.col .content .tit a {
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
+    font-family: 'HSBombaram';
     color: #999;
-    letter-spacing: 2px;
     transition: 0.5s;
 }
 
-.col .content .txt a::after {
+.col .content .tit a::after {
     content: "";
     display: block;
     width: 100%;
@@ -319,25 +319,41 @@ header .top button {
     transition: 0.5s;
 }
 
-.col .content .txt a:hover {
+.col .content .tit a:hover {
     color: #111;
 }
 
-.col .content .txt a:hover::after {
+.col .content .tit a:hover::after {
     background: #111;
 }
 
+.col .content .best {
+    position: relative;
+}
+
+.col .content .best h3 {
+    color: #333;
+    margin: 0 0 15px 0;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'HSBombaram';
+}
+
 .col .content .col_arrows {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: #999;
-    text-align: end;
     font-size: 21px;
 }
 
-.col .content .col_arrows i {
-    border: 1px solid #999;
-    border-radius: 50%;
-    padding: 5px;
-    margin: 0 10px 0 0;
+.col .content .col_arrows a:nth-child(1) {
+    margin: 0 0 0 -300px;
+}
+
+.col .content .col_arrows a:nth-child(2) {
+    margin: 0 0 0 300px;
 }
 
 .col .content .itm_slide figure {
@@ -364,22 +380,21 @@ header .top button {
 }
 
 .col .content .itm_slide a {
-    margin: 0 0 20px 0;
-    display: inline-block;
+    display: block;
     color: #999;
+    border-bottom: 1px solid #999;
+    border-top: 1px solid #999;
+    padding: 8px 0;
+    margin: 0 0 20px 0;
     font-weight: 500;
     transition: 0.5s;
-    text-decoration: underline overline;
-    text-underline-position: under;
 }
 
 
 .col .content .itm_slide a:hover {
     color: #111;
-}
-
-.col .content .itm_slide a:hover::after {
-    background: #111;
+    border-bottom: 1px solid #111;
+    border-top: 1px solid #111;
 }
 
 .col .bt .thumb figure {
