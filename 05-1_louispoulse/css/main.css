@@ -69,7 +69,7 @@
     height: 100vh;
     overflow: hidden;
     color: #222;
-    background: rgba(255, 255, 255, 0.8);
+    background: #fff;
     z-index: 999;
     transition: 0.5s;
 }
@@ -379,7 +379,7 @@ header .top button {
     color: #999;
 }
 
-.col .content .itm_slide a {
+.col .content .itm_slide .to_cart {
     display: block;
     color: #999;
     border-bottom: 1px solid #999;
@@ -400,3 +400,5 @@ header .top button {
 .col .bt .thumb figure {
     transform: translateX(-22px);
 }
+
+/* best */
