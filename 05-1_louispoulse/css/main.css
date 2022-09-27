@@ -22,6 +22,10 @@
     margin: 0 auto;
 }
 
+.HSF {
+    font-family: 'HSBombaram3_Regular3_Regular';
+}
+
 /* main_v */
 .main_v {
     display: flex;
@@ -179,7 +183,6 @@ header .top button {
 
 .main_visual .inner h2 {
     margin: 0 0 50px 0;
-    font-family: 'HSBombaram3_Regular';
     font-size: 45px;
     font-weight: 700;
 }
@@ -230,9 +233,76 @@ header .top button {
 
 .categories .itm p {
     text-align: center;
-    font-family: 'HSBombaram3_Regular';
+    font-family: 'HSBombaram3_Regular3_Regular';
     font-size: 17px;
     font-weight: 600;
+}
+
+/* best */
+.best {
+    display: flex;
+    margin: 0 0 0 60px;
+    padding: 50px 0 100px 0;
+    overflow: hidden;
+}
+
+.best .left {
+    margin: 0 250px 0 0;
+}
+
+.best .left .t_bg {
+    position: relative;
+    border-radius: 150px;
+    background: #f1f1f1;
+    width: 400px;
+    height: 100%;
+    transform: translateX(30px);
+}
+
+.best .left .t_bg::before {
+    position: absolute;
+    top: -10px;
+    left: -30px;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    border: 2px solid #111;
+}
+
+.best .left .txt {
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translateY(-50%);
+}
+
+.best .left .txt h2 {
+    font-family: 'HSBombaram3_Regular3_Regular';
+    font-size: 80px;
+}
+
+.best .left .txt h2:nth-child(2) {
+    transform: translateX(50px);
+}
+
+.best .left .txt a {
+    display: inline-block;
+    margin: 30px 0 0 0;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.best .b_slider .itm {
+    margin: 0 20px;
+}
+
+.best .b_slider .i_bg{
+    margin: 0 0 30px 0;
+    background: #f9f9f9;
+}
+.best .b_slider .i_bg figure{
+    width: 300px;
 }
 
 /* col */
@@ -287,7 +357,7 @@ header .top button {
 
 .col .content .tit h2 {
     margin: 0 0 30px 0;
-    font-family: 'HSBombaram3_Regular';
+    font-family: 'HSBombaram3_Regular3_Regular';
     font-size: 50px;
     font-weight: 900;
     letter-spacing: 5px;
@@ -298,13 +368,11 @@ header .top button {
     margin: 10px 0 0 0;
     text-shadow: 0 0 1px #000;
     color: #fff;
-    font-family: 'HSBombaram3_Regular';
 }
 
 .col .content .tit a {
     font-size: 15px;
     font-weight: 500;
-    font-family: 'HSBombaram3_Regular';
     color: #999;
     transition: 0.5s;
 }
@@ -336,7 +404,6 @@ header .top button {
     margin: 0 0 15px 0;
     font-size: 25px;
     font-weight: 600;
-    font-family: 'HSBombaram3_Regular';
 }
 
 .col .content .col_arrow {
@@ -348,7 +415,7 @@ header .top button {
     font-size: 21px;
 }
 
-.col .content .a_L{
+.col .content .a_L {
     margin: 0 0 0 -310px;
 }
 
@@ -400,5 +467,3 @@ header .top button {
 .col .bt .thumb figure {
     transform: translateX(-22px);
 }
-
-/* best */
