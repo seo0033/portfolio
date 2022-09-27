@@ -6,8 +6,8 @@
 }
 
 @font-face {
-    font-family: 'HSBombaram';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/HSBombaram.woff') format('woff');
+    font-family: 'HSBombaram3_Regular3_Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.1/HSBombaram3_Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -179,7 +179,7 @@ header .top button {
 
 .main_visual .inner h2 {
     margin: 0 0 50px 0;
-    font-family: 'HSBombaram';
+    font-family: 'HSBombaram3_Regular';
     font-size: 45px;
     font-weight: 700;
 }
@@ -230,7 +230,7 @@ header .top button {
 
 .categories .itm p {
     text-align: center;
-    font-family: 'HSBombaram';
+    font-family: 'HSBombaram3_Regular';
     font-size: 17px;
     font-weight: 600;
 }
@@ -287,7 +287,7 @@ header .top button {
 
 .col .content .tit h2 {
     margin: 0 0 30px 0;
-    font-family: 'HSBombaram';
+    font-family: 'HSBombaram3_Regular';
     font-size: 50px;
     font-weight: 900;
     letter-spacing: 5px;
@@ -298,13 +298,13 @@ header .top button {
     margin: 10px 0 0 0;
     text-shadow: 0 0 1px #000;
     color: #fff;
-    font-family: 'HSBombaram';
+    font-family: 'HSBombaram3_Regular';
 }
 
 .col .content .tit a {
     font-size: 15px;
     font-weight: 500;
-    font-family: 'HSBombaram';
+    font-family: 'HSBombaram3_Regular';
     color: #999;
     transition: 0.5s;
 }
@@ -336,10 +336,10 @@ header .top button {
     margin: 0 0 15px 0;
     font-size: 25px;
     font-weight: 600;
-    font-family: 'HSBombaram';
+    font-family: 'HSBombaram3_Regular';
 }
 
-.col .content .col_arrows {
+.col .content .col_arrow {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -348,12 +348,12 @@ header .top button {
     font-size: 21px;
 }
 
-.col .content .col_arrows a:nth-child(1) {
-    margin: 0 0 0 -300px;
+.col .content .a_L{
+    margin: 0 0 0 -310px;
 }
 
-.col .content .col_arrows a:nth-child(2) {
-    margin: 0 0 0 300px;
+.col .content .a_R {
+    margin: 0 0 0 310px;
 }
 
 .col .content .itm_slide figure {

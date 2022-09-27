@@ -8,20 +8,20 @@ $(function () {
         arrows: false,
     });
 
-    $('.col .t_a a:nth-child(1)').on('click', function (e) {
+    $('.col .content .a_L').on('click', function (e) {
         e.preventDefault();
         $('.col .top .content .itm_slide').slick('slickPrev');
     });
-    $('.col .t_a a:nth-child(2)').on('click', function (e) {
+    $('.col .content .a_R').on('click', function (e) {
         e.preventDefault();
         $('.col .top .content .itm_slide').slick('slickNext');
     });
 
-    $('.col .b_a a:nth-child(1)').on('click', function (e) {
+    $('.col .content .a_L').on('click', function (e) {
         e.preventDefault();
         $('.col .bt .content .itm_slide').slick('slickPrev');
     });
-    $('.col .b_a a:nth-child(2)').on('click', function (e) {
+    $('.col .content .a_R').on('click', function (e) {
         e.preventDefault();
         $('.col .bt .content .itm_slide').slick('slickNext');
     });
