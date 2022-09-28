@@ -152,17 +152,11 @@ header .top button {
 } */
 
 .main_visual .inner {
-    /* position: relative; */
     display: flex;
     align-items: center;
     gap: 50px;
     color: #111;
 }
-
-.main_visual .inner .des {
-    /* position: relative; */
-}
-
 
 .main_visual .inner .des>span {
     display: inline-block;
@@ -435,7 +429,6 @@ header .top button {
     font-family: 'SBAggroB';
     font-size: 50px;
     font-weight: 400;
-    letter-spacing: 5px;
 }
 
 .col .content .tit h2 span {
@@ -458,7 +451,7 @@ header .top button {
     display: block;
     width: 100%;
     height: 2px;
-    background: #999;
+    background: #111;
     margin: 5px 0 0 0;
     transition: 0.5s;
 }
@@ -467,9 +460,9 @@ header .top button {
     color: #111;
 }
 
-.col .content .tit a:hover::after {
+/* .col .content .tit a:hover::after {
     background: #111;
-}
+} */
 
 .col .content .pick {
     position: relative;
