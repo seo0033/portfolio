@@ -6,8 +6,8 @@
 }
 
 @font-face {
-    font-family: 'HSBombaram3_Regular3_Regular';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.1/HSBombaram3_Regular.woff') format('woff');
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -15,15 +15,12 @@
 * {
     outline: 1px solid rgb(163, 206, 184);
     font-family: 'Pretendard-Regular';
+    font-weight: 400;
 }
 
 .container {
     width: 1200px;
     margin: 0 auto;
-}
-
-.HSF {
-    font-family: 'HSBombaram3_Regular3_Regular';
 }
 
 /* main_v */
@@ -53,7 +50,7 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 
 .gnb>ul>li {
@@ -73,7 +70,7 @@
     height: 100vh;
     overflow: hidden;
     color: #222;
-    background: #fff;
+    background: #f9f9f9;
     z-index: 999;
     transition: 0.5s;
 }
@@ -105,6 +102,7 @@ header .top .right ul {
     display: flex;
     gap: 30px;
     font-size: 15px;
+    letter-spacing: 2px;
 }
 
 header .top .right input[type="text"] {
@@ -118,8 +116,8 @@ header .top .right input[type="text"] {
 header .top input[type="text"]::placeholder {
     border-bottom: 1px solid #333;
     padding: 5px 10px;
-    font-size: 13px;
-    letter-spacing: 5px;
+    font-size: 15px;
+    letter-spacing: 2px;
 }
 
 header .top input[type="text"]:focus::placeholder {
@@ -141,9 +139,9 @@ header .top button {
     align-items: center;
 }
 
-.main_visual::before {
+/* .main_visual::before {
     content: "";
-    background-image: url(../img/main_visual_bg.jpg);
+    background: url(../img/m_bg.jpg) center center/cover;
     background-size: cover;
     position: absolute;
     top: 0px;
@@ -151,10 +149,10 @@ header .top button {
     bottom: 0px;
     left: 0px;
     opacity: 0.3;
-}
+} */
 
 .main_visual .inner {
-    position: relative;
+    /* position: relative; */
     display: flex;
     align-items: center;
     gap: 50px;
@@ -162,29 +160,39 @@ header .top button {
 }
 
 .main_visual .inner .des {
-    position: relative;
+    /* position: relative; */
 }
 
-.main_visual .inner .des::after {
-    position: absolute;
-    bottom: -15px;
-    left: 0;
-    content: "";
-    display: block;
-    width: 120%;
-    height: 3px;
-    background: #333;
-}
 
-.main_visual .inner span {
+.main_visual .inner .des>span {
     display: inline-block;
-    margin: 0 0 20px 0;
+    margin: 0 0 30px 0;
+    font-weight: 500;
+}
+
+.main_visual .inner .des>span::after {
+    display: block;
+    content: "";
+    width: 30px;
+    height: 2px;
+    background: #111;
+    margin: 5px 0 0 0;
 }
 
 .main_visual .inner h2 {
-    margin: 0 0 50px 0;
-    font-size: 45px;
+    margin: 0 0 30px 0;
+    font-size: 50px;
     font-weight: 700;
+    font-family: 'SBAggroB';
+
+}
+
+.main_visual .inner h2 span {
+    margin: 10px 0 0 0;
+    text-shadow: 0 0 1px #000;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'SBAggroB';
 }
 
 .main_visual .inner p {
@@ -192,7 +200,15 @@ header .top button {
 }
 
 .main_visual .inner video {
-    border-radius: 50% 50%;
+    border-radius: 50% 50% 0 0;
+}
+
+.main_visual .inner video::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #111;
 }
 
 /* categories */
@@ -210,7 +226,7 @@ header .top button {
     width: 180px;
     border-radius: 50%;
     background: #f9f9f9;
-    margin: 0 0 20px 0;
+    margin: 0 0 30px 0;
 }
 
 .categories figure::after {
@@ -233,21 +249,21 @@ header .top button {
 
 .categories .itm p {
     text-align: center;
-    font-family: 'HSBombaram3_Regular3_Regular';
+    font-family: 'SBAggroB';
     font-size: 17px;
-    font-weight: 600;
 }
 
 /* best */
 .best {
     display: flex;
     margin: 0 0 0 60px;
-    padding: 50px 0 100px 0;
+    padding: 100px 0;
     overflow: hidden;
 }
 
 .best .left {
-    margin: 0 250px 0 0;
+    width: 20%;
+    margin: 0 100px 0 0;
 }
 
 .best .left .t_bg {
@@ -278,31 +294,90 @@ header .top button {
 }
 
 .best .left .txt h2 {
-    font-family: 'HSBombaram3_Regular3_Regular';
-    font-size: 80px;
+    font-family: 'SBAggroB';
+    font-size: 50px;
+    font-family: 100;
 }
 
 .best .left .txt h2:nth-child(2) {
-    transform: translateX(50px);
+    transform: translateX(45px);
 }
 
 .best .left .txt a {
     display: inline-block;
     margin: 30px 0 0 0;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.best .left .txt a::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #111;
+    margin: 5px 0 0 0;
+}
+
+.best .b_slider {
+    width: 80%;
+    margin: 0 0 0 100px;
+}
+
+.best .b_slider figure {
+    margin: 0 auto 30px auto;
+    background: url(../img/best_itm_bg.png)no-repeat center center/contain;
+    width: 300px;
+}
+
+
+.best .b_slider .des {
+    text-align: center;
+}
+
+.best .b_slider .des h3 {
+    margin: 0 0 25px 0;
     font-size: 19px;
     font-weight: 500;
 }
 
-.best .b_slider .itm {
-    margin: 0 20px;
+.best .b_slider .des strong {
+    display: inline-block;
+    color: #999;
+    margin: 0 0 10px 0;
+    font-size: 17px;
+    font-weight: 500;
 }
 
-.best .b_slider .i_bg{
-    margin: 0 0 30px 0;
-    background: #f9f9f9;
+.best .b_slider .des a {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
 }
-.best .b_slider .i_bg figure{
-    width: 300px;
+
+.best .b_slider .des .color span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 5px 30px 5px;
+}
+
+.best .b_slider .des .c_01 {
+    background: #be7f90;
+}
+
+.best .b_slider .des .c_02 {
+    background: #8e7e7f;
+}
+
+.best .b_slider .des a::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #111;
+    margin: 8px 0 0 0;
 }
 
 /* col */
@@ -357,9 +432,9 @@ header .top button {
 
 .col .content .tit h2 {
     margin: 0 0 30px 0;
-    font-family: 'HSBombaram3_Regular3_Regular';
+    font-family: 'SBAggroB';
     font-size: 50px;
-    font-weight: 900;
+    font-weight: 400;
     letter-spacing: 5px;
 }
 
@@ -368,6 +443,7 @@ header .top button {
     margin: 10px 0 0 0;
     text-shadow: 0 0 1px #000;
     color: #fff;
+    font-family: 'SBAggroB';
 }
 
 .col .content .tit a {
@@ -395,11 +471,11 @@ header .top button {
     background: #111;
 }
 
-.col .content .best {
+.col .content .pick {
     position: relative;
 }
 
-.col .content .best h3 {
+.col .content .pick h3 {
     color: #333;
     margin: 0 0 15px 0;
     font-size: 25px;
