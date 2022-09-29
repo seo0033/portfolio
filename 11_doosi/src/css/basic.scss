@@ -1,0 +1,123 @@
+$m_c: #004433;
+$s_c: #f9f5ea;
+$gr_c : #dddddd;
+
+* {
+    outline: 1px solid rgb(158, 179, 199) !important;
+}
+
+body {
+    overflow-x: hidden;
+    background: $s_c;
+}
+
+.Wrapper {
+    min-width: 1170px;
+}
+
+.inner {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+// Header
+.Header {
+    .top {
+        width: 1170px;
+        margin: 0 auto;
+        padding: 5px 0;
+
+
+        ul {
+            display: flex;
+            justify-content: flex-end;
+            gap: 30px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+    }
+
+    .inner {
+        display: flex;
+        justify-content: space-between;
+        line-height: 80px;
+
+        h1 {
+            width: 100px;
+        }
+
+        ul {
+            display: flex;
+            gap: 40px;
+            color: $m_c;
+            font-size: 17px;
+            font-weight: 500;
+        }
+    }
+
+    .line {
+        background: $m_c;
+        height: 3px;
+        margin: 5px 0;
+    }
+}
+
+// Footer
+.Footer {
+    .inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0;
+    }
+
+    h2 {
+        margin: auto 0;
+    }
+
+    li {
+        margin: 0 0 5px 0;
+    }
+
+    .company_i {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+
+        li {
+            span {
+                font-size: 19px;
+                font-weight: 500;
+            }
+        }
+
+        .bank {
+            color: $m_c;
+        }
+    }
+
+
+    .f_right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .call {
+            margin: 0 0 15px 0;
+            font-size: 19px;
+            font-weight: 500;
+            color: $m_c;
+        }
+
+        .sns {
+            span {
+                display: inline-block;
+                padding: 5px;
+                margin: 0 10px 0 0;
+                border: 1px solid #222;
+                border-radius: 50%;
+            }
+
+        }
+    }
+}

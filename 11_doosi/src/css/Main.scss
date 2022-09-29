@@ -1,0 +1,73 @@
+@use './basic.scss';
+
+.sc {
+    border-top: 3px solid basic.$m_c;
+}
+
+.MainVisual {
+    .s_box {
+        display: flex;
+    }
+
+    figure {
+        height: 500px;
+    }
+
+    .itm01 {
+        background: url(../../public/assets/img/main_v_01.jpg)no-repeat center center/cover;
+    }
+
+    .itm02 {
+        background: url(../../public/assets/img/main_v_02.jpg) no-repeat center center/cover;
+    }
+
+    .itm03 {
+        background: url(../../public/assets/img/main_v_03.jpg) no-repeat center center/cover;
+    }
+
+}
+
+//Categories
+.Categories {
+    padding: 100px 0;
+
+    figure {
+        border: 3px solid basic.$m_c;
+
+        .box {
+            overflow: hidden;
+        }
+
+        img {
+            transition: 0.5s;
+        }
+
+        :hover img {
+            transform: scale(1.2);
+        }
+    }
+
+    .inner {
+        display: flex;
+        gap: 30px;
+
+        .tit {
+            border-top: 3px solid basic.$m_c;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 19px;
+            font-weight: 700;
+        }
+    }
+}
+
+//Subscribe
+.Subscribe {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+
+    .left {
+        margin: 0 0 0 calc((100% - 1200px)/2);
+    }
+}
