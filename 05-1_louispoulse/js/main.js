@@ -32,4 +32,15 @@ $(function () {
         slidesToShow: 4,
     });
 
+    //
+    $('.designer .dp_slide').slick({
+        vertical: true,
+        infinite: true,
+        slidesToShow: 3,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        cssEase: 'ease-out',
+    })
+
 })//the end
