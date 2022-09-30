@@ -1,6 +1,13 @@
 $m_c: #004433;
-$s_c: #f9f5ea;
+$s_c: #7d9d91;
+$txt_c: #00281e;
+$bg_c: #f9f5ea;
 $gr_c : #dddddd;
+$hah_f : 'Hahmlet',
+serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 
 * {
     outline: 1px solid rgb(158, 179, 199) !important;
@@ -8,7 +15,7 @@ $gr_c : #dddddd;
 
 body {
     overflow-x: hidden;
-    background: $s_c;
+    background: $bg_c;
 }
 
 .Wrapper {
@@ -25,15 +32,15 @@ body {
     .top {
         width: 1170px;
         margin: 0 auto;
-        padding: 5px 0;
-
+        padding: 8px 0;
 
         ul {
             display: flex;
             justify-content: flex-end;
             gap: 30px;
             font-size: 15px;
-            font-weight: 500;
+            font-weight: 600;
+            color: $m_c;
         }
     }
 
@@ -51,14 +58,20 @@ body {
             gap: 40px;
             color: $m_c;
             font-size: 17px;
-            font-weight: 500;
+            font-weight: 700;
+            font-family: $hah_f;
+            text-transform: uppercase;
         }
     }
 
     .line {
         background: $m_c;
         height: 3px;
-        margin: 5px 0;
+        margin: 0 0 5px 0;
+    }
+
+    .last {
+        margin: 0 0 0 0;
     }
 }
 

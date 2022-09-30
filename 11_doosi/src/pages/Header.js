@@ -13,7 +13,7 @@ const Header = () => {
           <li>CART</li>
         </ul>
       </div>
-
+      <div className='line'></div>
       <div className='line'></div>
       <div className="inner">
         <nav>
@@ -29,6 +29,7 @@ const Header = () => {
         </nav>
       </div>
       <div className='line'></div>
+      <div className='line last'></div>
     </header>
   )
 }
