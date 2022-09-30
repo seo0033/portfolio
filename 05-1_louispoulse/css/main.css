@@ -536,3 +536,98 @@ header .top button {
 .col .bt .thumb figure {
     transform: translateX(-22px);
 }
+
+/* designer */
+.designer {
+    position: relative;
+    height: 100vh;
+    background: #222;
+    overflow: hidden;
+}
+
+.designer .tit {
+    position: absolute;
+    top: 50%;
+    left: calc((100% - 1200px)/2);
+    transform: translateY(-50%);
+}
+
+.designer .tit h2 {
+    color: #222;
+    text-shadow: 0 0 1px #fff;
+    margin: 0 0 30px 0;
+    font-size: 80px;
+    font-weight: 900;
+    font-family: 'SBAggroB';
+    line-height: 120%;
+}
+
+.designer .tit a {
+    display: block;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    line-height: 30px;
+}
+
+.designer .tit .d_arrow {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+    background: #fff;
+    margin: 0 0 5px 10px;
+}
+
+.designer .tit .d_arrow::before {
+    position: absolute;
+    top: -25px;
+    left: -150%;
+    content: "";
+    width: 100px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.designer .tit .d_arrow::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    width: 15px;
+    height: 1px;
+    background: #fff;
+    transform: rotate(45deg);
+    transform-origin: top right;
+}
+
+.designer .photo_s {
+    display: flex;
+    gap: 30px;
+    width: 50%;
+    margin: 0 0 0 auto;
+    padding-right: calc((100% - 1200px)/2);
+}
+
+.dp_slide .slick-list {
+    overflow: visible;
+}
+
+.designer .photo_s figure {
+    margin: 15px 0;
+}
+
+.designer .photo_1 {
+    width: 50%;
+}
+
+.designer .photo_2 {
+    width: 50%;
+    transform: translateY(80px);
+}
+
+/* magazine */
+.magazine {
+    padding: 100px 0;
+}
