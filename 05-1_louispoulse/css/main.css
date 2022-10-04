@@ -651,13 +651,6 @@ header .top button {
 }
 
 .magazine h2 {
-    margin: 0 0 10px 0;
-    text-align: center;
-}
-
-.magazine p {
-    font-size: 17px;
-    font-weight: 500;
     margin: 0 0 30px 0;
     text-align: center;
 }
