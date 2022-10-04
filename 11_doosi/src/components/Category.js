@@ -2,29 +2,27 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { CATEGORY } from './DATA'
 
-const Categories = () => {
+const Category = () => {
     return (
-        <div>
-            <section className="Categories sc">
-                <div className="inner">
-                    {
-                        CATEGORY.map((it) => {
-                            return (
-                                <figure key={it.id}>
-                                    <Link to={it.link}>
-                                        <div className="box">
-                                            <img src={process.env.PUBLIC_URL + "/assets/img/cate_0" + it.id + ".png"} alt="" />
-                                        </div>
-                                        <div className='tit'>{it.tit}</div>
-                                    </Link>
-                                </figure>
-                            )
-                        })
-                    }
-                </div>
-            </section>
-        </div>
+        <section className="Category sc">
+            <div className="inner">
+                {
+                    CATEGORY.map((it) => {
+                        return (
+                            <figure key={it.id}>
+                                <Link to={it.link}>
+                                    <div className="box">
+                                        <img src={process.env.PUBLIC_URL + "/assets/img/cate_0" + it.id + ".png"} alt="" />
+                                    </div>
+                                    <div className='tit'>{it.tit}</div>
+                                </Link>
+                            </figure>
+                        )
+                    })
+                }
+            </div>
+        </section>
     )
 }
 
-export default Categories
+export default Category

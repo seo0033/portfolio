@@ -62,11 +62,10 @@
             }
         }
     }
-
 }
 
-//Categories
-.Categories {
+//Category
+.Category {
     padding: 100px 0;
 
     figure {
@@ -290,13 +289,15 @@
 
         }
     }
+}
 
-    .txt_line {
-        background: basic.$m_c;
-        color: basic.$txt_c;
-        line-height: 45px;
-        font-size: 25px;
-        font-weight: 700;
-        font-family: basic.$hah_f;
-    }
+// Marquee
+
+.txt_line {
+    background: basic.$m_c;
+    color: basic.$txt_c;
+    line-height: 45px;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: basic.$hah_f;
 }

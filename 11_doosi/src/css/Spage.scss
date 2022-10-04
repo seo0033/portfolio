@@ -1,2 +1,105 @@
 @use './basic.scss';
 
+.container {
+    width: 1700px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.border_b {
+    border-bottom: 3px solid;
+}
+
+.sub_v {
+    position: relative;
+    font-family: basic.$hah_f;
+    color: basic.$txt_c;
+
+    img {
+        width: 100%;
+    }
+
+    h2 {
+        position: absolute;
+        top: 50%;
+        left: calc((100% - 1170px)/2);
+        font-size: 40px;
+        font-weight: 800;
+    }
+}
+
+.sub_top {
+    font-family: basic.$hah_f;
+    color: basic.$txt_c;
+
+    .sub_cate {
+        margin: 0 0 15px 0;
+        font-size: 21px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .sub_tit {
+        padding: 0 0 30px 0;
+        font-size: 80px;
+        font-weight: 800;
+    }
+
+}
+
+// marcket sub01
+.marcket {
+
+    .product_01 {
+        display: flex;
+        justify-content: space-between;
+
+        .tab_menu {
+            li {
+                margin: 50px 0 30px 0;
+                font-size: 21px;
+                font-weight: 700;
+            }
+
+        }
+
+        .tab_pd {
+            margin: 0 0 0 30px;
+            text-align: center;
+
+            .box {
+                display: grid;
+                flex-wrap: wrap;
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            font-size: 21px;
+            font-weight: 500;
+
+            figure {
+                padding: 50px;
+                // border: 1px solid basic.$txt_c;
+
+                table {
+                    border: 3px solid basic.$txt_c;
+
+                    th,
+                    td {
+                        padding: 10px 0;
+                        border: 3px solid basic.$txt_c;
+                    }
+                }
+
+                img {
+                    padding: 15px;
+                    border: 3px solid basic.$txt_c;
+                    transform: translateY(-3px);
+                }
+            }
+
+
+        }
+
+    }
+
+}

@@ -35,11 +35,6 @@ const Class = () => {
                     <Link to={'/sub02'} className='C_button'>Class<br />Reservation</Link>
                 </div>
             </div>
-            <div className="txt_line">
-                Share life style with Doosi Share life style with Doosi
-                Share life style with Doosi Share life style with Doosi
-                Share life style with Doosi
-            </div>
         </section>
     )
 }

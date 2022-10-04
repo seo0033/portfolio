@@ -3,9 +3,12 @@ import { FaFacebookF, FaTwitter, FaPinterestP, FaInstagram } from "react-icons/f
 import { Link } from 'react-router-dom'
 
 
+
 const Footer = () => {
     return (
-        <footer className='Footer sc'>
+        <footer className='Footer'>
+            <div className='line'></div>
+            <div className='line'></div>
             <div className="inner">
                 <h2>
                     <Link to='/'>

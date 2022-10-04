@@ -24,13 +24,13 @@ const MainVisual = () => {
     }
 
     return (
-        <section className='MainVisual sc'>
+        <section className='MainVisual'>
             <Slider {...setting} ref={mainSlide}>
                 {
                     Slide.map((slide, idx) => {
                         return (
-                            <div className='s_box'>
-                                <figure key={slide.id} className={'itm0' + slide.id}></figure>
+                            <div className='s_box sc'>
+                                <figure key={idx} className={'itm0' + slide.id}></figure>
                                 <div className="mv_txt">
                                     <span>{slide.span}</span>
                                     <h2 className='tit'>{slide.tit}</h2>
@@ -41,17 +41,6 @@ const MainVisual = () => {
                     })
                 }
             </Slider>
-            <ul className='slideDot'>
-                {
-                    Slide.map((dots, idx) => {
-                        return (
-                            <li key={dots.id} className={idx === IDX ? 'on' : ''} onClick=
-                                {() => mainSlide.current.slickGoto(idx)
-                                }></li>
-                        )
-                    })
-                }
-            </ul>
         </section>
     )
 }
