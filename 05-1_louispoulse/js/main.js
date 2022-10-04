@@ -1,5 +1,11 @@
 $(function () {
 
+    //top_banner
+    $('.top_banner a>i').on('click', function (e) {
+        e.preventDefault();
+        $('.top_banner').slideUp();
+    });
+
     // col itm_sldier
     $('.col .content .itm_slide').slick({
         infinite: true,

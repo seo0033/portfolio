@@ -17,14 +17,38 @@
 
 <body>
     <div class="wrap">
-        <main>
-            <!-- main_v -->
-            <section class="main_v">
-                <nav class="gnb">
+        <header>
+            <!-- top_banner -->
+            <section class="top_banner">
+                <div class="container">
+                    <p>July Curation, MONDRIAN PRODUCT & MULTI CUBE 20%</p>
+                    <a href=""><i class="xi-close-min"></i></a>
+                </div>
+            </section>
+
+            <!-- gnb -->
+            <nav class="gnb">
+                <div class="g_top">
+                    <div class="container">
+                        <ul>
+                            <li><a href="">Login</a></li>
+                            <li><a href="">Join</a></li>
+                            <li><a href="">Cart</a></li>
+                            <li><a href="">My page</a></li>
+                        </ul>
+                        <input type="text" placeholder="Search&nbsp;Here">
+                        <button>
+                            <a href="#!"><i class="xi-search"></i></a>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="g_bottom container">
+                    <h1><img src="./img/logo.png" alt=""></h1>
                     <ul>
                         <li>
                             <a href="">Product</a>
-                            <ul>
+                            <ul class="smenu">
                                 <li><a href="">Pendant</a></li>
                                 <li><a href="">Floor Lamp</a></li>
                                 <li><a href="">Table Lamp</a></li>
@@ -34,7 +58,7 @@
                         </li>
                         <li>
                             <a href="">Designer</a>
-                            <ul>
+                            <ul class="smenu">
                                 <li><a href="">Anne Boysen</a></li>
                                 <li><a href="">Alfred Homann</a></li>
                                 <li><a href="">Anu Moser</a></li>
@@ -48,7 +72,7 @@
                         </li>
                         <li>
                             <a href="">Inspiration</a>
-                            <ul>
+                            <ul class="smenu">
                                 <li><a href="">Application Examples</a></li>
                                 <li><a href="">Guide</a></li>
                                 <li><a href="">Magazine</a></li>
@@ -56,7 +80,7 @@
                         </li>
                         <li>
                             <a href="">Introduce</a>
-                            <ul>
+                            <ul class="smenu">
                                 <li><a href="">Design to Shape Light</a></li>
                                 <li><a href="">Customer Service</a></li>
                                 <li><a href="">News Letter</a></li>
@@ -65,42 +89,21 @@
                         </li>
                         <li>
                             <a href="">Store</a>
-                            <ul>
+                            <ul class="smenu">
                                 <li><a href="">Store search</a></li>
                             </ul>
                         </li>
                     </ul>
-                </nav>
-                <div class="m_right">
-                    <header>
-                        <div class="top container">
-                            <h1><img src="./img/logo.png" alt=""></h1>
-                            <div class="right">
-                                <ul>
-                                    <li><a href="">Login</a></li>
-                                    <li><a href="">Join</a></li>
-                                    <li><a href="">Cart</a></li>
-                                    <li><a href="">My page</a></li>
-                                </ul>
-
-                                <input type="text" placeholder="Search&nbsp;Here">
-                                <button>
-                                    <a href="#!"><i class="xi-search"></i></a>
-                                </button>
-                            </div>
-                        </div>
-                    </header>
-                    <div class="main_visual">
-                        <div class="inner">
-                            <div class="des">
-                                <span>Poul Henningsen</span>
-                                <h2>Design to<br /><span>Shape Light</span></h2>
-                                <p>루이스폴센은 그저 램프를 디자인하는 데 그치지 않고 <br />빛을 형상화하여 사람들에게 좋은 느낌을 전달해줄 수 있는 실내외 분위기를 만들고자
-                                    노력합니다.</p>
-                            </div>
-                            <video src="./img/main_visual_video.mp4" autoplay loop></video>
-                        </div>
-                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!-- main_visual -->
+            <section class="main_visual">
+                <div class="inner">
+                    <video width="100%" muted="muted" loop="loop" autoplay="autoplay">
+                        <source src="./img/vedio.mp4" type="video/mp4" />
+                    </video>
                 </div>
             </section>
             <!-- categories -->
