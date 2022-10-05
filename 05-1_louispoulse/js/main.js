@@ -34,9 +34,24 @@ $(function () {
 
     // best slider
     $('.best .b_slider').slick({
+        arrows: false,
         infinite: true,
         slidesToShow: 4,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1
+                }
+            },
+        ]
     });
+
+    $('.best .left .b_slider_ar').on('click', function (e) {
+        e.preventDefault();
+        $('.best .b_slider').slick('slickPrev');
+    });
+
 
     //designer
     $('.designer .dp_slide').slick({
