@@ -6,6 +6,8 @@
 
 //MainVisual
 .MainVisual {
+    position: relative;
+
     .s_box {
         position: relative;
 
@@ -33,7 +35,7 @@
             left: 75%;
             width: 50%;
             transform: translate(-50%, -50%);
-            color: basic.$txt_c;
+            color: basic.$m_c;
             text-align: center;
             white-space: pre-wrap;
 
@@ -59,9 +61,33 @@
             p {
                 font-size: 17px;
                 font-weight: 500;
+                color: basic.$txt_c;
             }
         }
     }
+
+    .slidedot {
+        position: absolute;
+        bottom: 50px;
+        left: 75%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 15px;
+
+        li {
+            width: 15px;
+            height: 15px;
+            background: rgba(125, 157, 145, 0.5);
+            border-radius: 50%;
+            cursor: pointer;
+
+            &.on {
+                background: basic.$s_c;
+            }
+        }
+    }
+
+
 }
 
 //Category
@@ -94,7 +120,7 @@
             text-align: center;
             font-size: 19px;
             font-weight: 700;
-            color: basic.$txt_c;
+            color: basic.$m_c;
         }
     }
 }
@@ -121,7 +147,7 @@
                 font-weight: 800;
                 letter-spacing: 1px;
                 text-transform: uppercase;
-                color: basic.$txt_c;
+                color: basic.$m_c;
             }
 
             span {
@@ -164,11 +190,10 @@
 
                 h3 {
                     display: inline-block;
-                    letter-spacing: 1px;
                     font-size: 25px;
                     font-weight: 700;
                     font-family: basic.$hah_f;
-                    color: basic.$txt_c;
+                    color: basic.$m_c;
                 }
 
                 p {
@@ -204,6 +229,8 @@
         }
 
         .C_right {
+            margin: auto 0;
+
             .circle {
                 position: relative;
                 height: 100px;
@@ -223,7 +250,7 @@
                     font-weight: 800;
                     letter-spacing: 1px;
                     text-transform: uppercase;
-                    color: basic.$txt_c;
+                    color: basic.$m_c;
                     text-align: center;
                 }
             }
@@ -241,10 +268,10 @@
 
                     h3 {
                         margin: 0 0 15px 0;
-                        font-size: 35px;
+                        font-size: 25px;
                         font-weight: 700;
                         font-family: basic.$hah_f;
-                        color: basic.$txt_c;
+                        color: basic.$m_c;
 
                     }
                 }
@@ -258,7 +285,7 @@
                 font-size: 21px;
                 font-weight: 700;
                 font-family: basic.$hah_f;
-                color: basic.$txt_c;
+                color: basic.$m_c;
 
                 &::before {
                     position: absolute;
@@ -269,7 +296,7 @@
                     display: block;
                     width: 230px;
                     height: 70px;
-                    border: 1px solid basic.$txt_c;
+                    border: 1px solid basic.$m_c;
                     border-radius: 50%;
                 }
 
@@ -282,7 +309,7 @@
                     display: block;
                     width: 230px;
                     height: 70px;
-                    border: 1px solid basic.$txt_c;
+                    border: 1px solid basic.$m_c;
                     border-radius: 50%;
                 }
             }
@@ -292,7 +319,6 @@
 }
 
 // Marquee
-
 .txt_line {
     background: basic.$m_c;
     color: basic.$txt_c;

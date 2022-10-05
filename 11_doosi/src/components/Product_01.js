@@ -11,7 +11,7 @@ const Product_01 = () => {
                     {
                         CATEGORY.map((it, idx) => {
                             return (
-                                <li onClick={() => setTablink(idx)}>{it.tit}</li>
+                                <Link to={it.link}><li onClick={() => setTablink(idx)}>{it.tit}</li></Link>
                             )
                         })
                     }
@@ -32,7 +32,7 @@ const Product_01 = () => {
                                         <td>{it.price}</td>
                                     </tr>
                                 </table>
-                                <img src={process.env.PUBLIC_URL + "/assets/img/sub01_product_0" + it.id + ".jpg"} alt="" />
+                                <Link><img src={process.env.PUBLIC_URL + "/assets/img/sub01_product_0" + it.id + ".jpg"} alt="" /></Link>
                             </figure>
                         )
                     })

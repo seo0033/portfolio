@@ -16,11 +16,10 @@ const MainVisual = () => {
     const mainSlide = useRef(null);
     const setting = {
         arrows: false,
-        // dots: true,
-        // afterChange: index => setIDX(index),
-        // autoplay: true,
-        // autoplaySpeed: 3000,
-        // fade: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        fade: true,
+        afterChange: index => setIDX(index),
     }
 
     return (
@@ -30,7 +29,7 @@ const MainVisual = () => {
                     Slide.map((slide, idx) => {
                         return (
                             <div className='s_box sc'>
-                                <figure key={idx} className={'itm0' + slide.id}></figure>
+                                <figure key={idx} className={'itm0' + slide.id + (idx === IDX ? ' on' : '')}></figure>
                                 <div className="mv_txt">
                                     <span>{slide.span}</span>
                                     <h2 className='tit'>{slide.tit}</h2>
@@ -41,6 +40,15 @@ const MainVisual = () => {
                     })
                 }
             </Slider>
+            <ul className="slidedot">
+                {
+                    Slide.map((dots, idx) => {
+                        return (
+                            <li key={dots.id} className={idx === IDX ? ' on' : ''} onClick={() => mainSlide.current.slickGoTo(idx)}>{dots.title}</li>
+                        )
+                    })
+                }
+            </ul>
         </section>
     )
 }

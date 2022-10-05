@@ -1,36 +1,37 @@
 @use './basic.scss';
 
-.container {
-    width: 1700px;
-    margin: 0 auto;
-    padding: 100px 0;
-}
-
-.border_b {
-    border-bottom: 3px solid;
+.b_bottom {
+    border-bottom: 3px solid basic.$m_c;
 }
 
 .sub_v {
     position: relative;
     font-family: basic.$hah_f;
-    color: basic.$txt_c;
+    color: basic.$m_c;
+
+    figure {
+        height: 400px;
+    }
 
     img {
         width: 100%;
+        height: 100%;
     }
 
     h2 {
         position: absolute;
         top: 50%;
         left: calc((100% - 1170px)/2);
-        font-size: 40px;
+        transform: translateY(-50%);
+        font-size: 31px;
         font-weight: 800;
     }
 }
 
-.sub_top {
+.sub_sc {
+    padding: 100px 0;
     font-family: basic.$hah_f;
-    color: basic.$txt_c;
+    color: basic.$m_c;
 
     .sub_cate {
         margin: 0 0 15px 0;
@@ -41,7 +42,7 @@
 
     .sub_tit {
         padding: 0 0 30px 0;
-        font-size: 80px;
+        font-size: 60px;
         font-weight: 800;
     }
 
@@ -73,26 +74,26 @@
                 grid-template-columns: repeat(3, 1fr);
             }
 
-            font-size: 21px;
+            font-size: 17px;
             font-weight: 500;
 
             figure {
-                padding: 50px;
+                padding: 15px;
                 // border: 1px solid basic.$txt_c;
 
                 table {
-                    border: 3px solid basic.$txt_c;
+                    border: 3px solid basic.$m_c;
 
                     th,
                     td {
                         padding: 10px 0;
-                        border: 3px solid basic.$txt_c;
+                        border: 3px solid basic.$m_c;
                     }
                 }
 
                 img {
                     padding: 15px;
-                    border: 3px solid basic.$txt_c;
+                    border: 3px solid basic.$m_c;
                     transform: translateY(-3px);
                 }
             }
@@ -102,4 +103,71 @@
 
     }
 
+}
+
+//class sub02
+.class{
+    
+}
+
+
+//review sub04
+.review {
+
+    .box {
+        display: flex;
+        margin: 30px 0;
+
+        figure {
+            flex: 1;
+            border: 3px solid basic.$m_c;
+        }
+
+        >div {
+            flex: 1;
+            border-top: 3px solid basic.$m_c;
+            border-right: 3px solid basic.$m_c;
+            border-bottom: 3px solid basic.$m_c;
+        }
+
+        .des {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            padding: 0 0 0 30px;
+            margin: auto 0;
+
+            h3 {
+                margin: 0 0 30px 0;
+                font-size: 21px;
+                font-weight: 600;
+
+                span {
+                    margin: 0 0 0 5px;
+                    font-size: 30px;
+                    color: basic.$s_c;
+                }
+
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 50px;
+                    height: 3px;
+                    background: basic.$m_c;
+                    margin: 10px 0 0 0;
+                }
+            }
+
+            p {
+                margin: 0 0 15px 0;
+            }
+
+            b {
+                margin: 30px 0 0 0;
+            }
+
+
+        }
+    }
 }

@@ -36,7 +36,7 @@ const Footer = () => {
                     </div>
 
                     <div className="sns">
-                        <span><FaFacebookF /></span>
+                        <span><FaFacebookF className='icon'/></span>
                         <span><FaInstagram /></span>
                         <span><FaPinterestP /></span>
                         <span><FaTwitter /></span>

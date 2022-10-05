@@ -5,16 +5,16 @@ import '../css/Spage.scss'
 const Sub03 = ({ Content }) => {
   const num = 2;
   return (
-    <section className='class sub03'>
+    <section className='subscribe sub03'>
       <div className="sub_v sc">
         <figure>
-          <img src={process.env.PUBLIC_URL + "/assets/img/sub_bg_04.png"} alt="" />
+          <img src={process.env.PUBLIC_URL + "/assets/img/sub_bg_03.jpg"} alt="" />
           <h2>{Content[num].pha}</h2>
         </figure>
       </div>
-      <div className="container sub_top">
-        <div className='sub_cate'>{Content[num].con} / {CATEGORY[0].tit}</div>
-        <div className="sub_tit border_b">{CATEGORY[0].tit}</div>
+      <div className="inner sub_sc">
+        <div className='sub_cate'>{Content[num].con} / DOOSI</div>
+        <div className="sub_tit b_bottom">{Content[num].con}</div>
       </div>
     </section>
   )

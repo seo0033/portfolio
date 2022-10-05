@@ -1,16 +1,6 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
-
-const NAVLINK = [
-    { id: 1, content: "Market", link: "/sub01" },
-    { id: 2, content: "Class", link: "/sub02" },
-    { id: 3, content: "Subscribe", link: "/sub03" },
-    { id: 4, content: "Review", link: "/sub04" },
-]
-
-const SUBMENU = [
-
-]
+import { Link } from 'react-router-dom'
+import { NAVLINK } from './DATA'
 
 const NavMenu_L = () => {
     return (
@@ -18,7 +8,7 @@ const NavMenu_L = () => {
             {
                 NAVLINK.slice(0, 2).map((it, idx) => {
                     return (
-                        <li key={idx}><NavLink to={it.link}>{it.content}</NavLink>
+                        <li key={idx}><Link to={it.link}>{it.content}</Link>
                             <ul>
                                 {
                                     <li></li>
@@ -38,7 +28,7 @@ const NavMenu_R = () => {
             {
                 NAVLINK.slice(2, 4).map((it, idx) => {
                     return (
-                        <li key={idx}><NavLink to={it.link}>{it.content}</NavLink></li>
+                        <li key={idx}><Link to={it.link}>{it.content}</Link></li>
                     )
                 })
             }

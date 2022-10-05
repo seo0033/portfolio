@@ -1,6 +1,6 @@
 $m_c: #004433;
 $s_c: #7d9d91;
-$txt_c: #00281e;
+$txt_c: #00140f;
 $bg_c: #f9f5ea;
 $gr_c : #dddddd;
 $hah_f : 'Hahmlet',
@@ -10,7 +10,7 @@ serif;
 
 
 * {
-    outline: 1px solid rgb(158, 179, 199) !important;
+    // outline: 1px solid rgb(158, 179, 199) !important;
 }
 
 body {
@@ -77,6 +77,8 @@ body {
 
 // Footer
 .Footer {
+    color: $txt_c;
+
     .inner {
         display: flex;
         justify-content: space-between;
@@ -109,7 +111,6 @@ body {
         }
     }
 
-
     .f_right {
         display: flex;
         flex-direction: column;
@@ -126,8 +127,8 @@ body {
             span {
                 display: inline-block;
                 padding: 5px;
-                margin: 0 10px 0 0;
-                border: 1px solid #222;
+                margin: auto 10px auto 0;
+                border: 1px solid $txt_c;
                 border-radius: 50%;
             }
 

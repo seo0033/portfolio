@@ -12,9 +12,12 @@ const Sub02 = ({ Content }) => {
           <h2>{Content[num].pha}</h2>
         </figure>
       </div>
-      <div className="container sub_top">
-        <div className='sub_cate'>{Content[num].con} / {CATEGORY[0].tit}</div>
-        <div className="sub_tit border_b">{CATEGORY[0].tit}</div>
+      <div className="inner sub_sc">
+        <div className='sub_cate'>{Content[num].con} / DOOSI</div>
+        <div className="sub_tit b_bottom">{Content[num].con}</div>
+      </div>
+      <div className="content">
+
       </div>
     </section>
   )
