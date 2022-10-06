@@ -1,5 +1,6 @@
 import React from 'react'
 import { CATEGORY } from '../components/DATA';
+import Theme from '../components/Theme';
 import '../css/Spage.scss'
 
 const Subscribe = ({ Content }) => {
