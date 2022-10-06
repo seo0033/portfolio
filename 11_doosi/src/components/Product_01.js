@@ -11,7 +11,7 @@ const Product_01 = () => {
                     {
                         CATEGORY.map((it, idx) => {
                             return (
-                                <Link to={it.link}><li onClick={() => setTablink(idx)}>{it.tit}</li></Link>
+                                <Link><li onClick={() => setTablink(idx)}>{it.tit}</li></Link>
                             )
                         })
                     }

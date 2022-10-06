@@ -1,5 +1,6 @@
 import React from 'react'
 import { CATEGORY } from '../components/DATA';
+import Theme from '../components/Theme';
 import '../css/Spage.scss'
 
 const Sub03 = ({ Content }) => {
@@ -15,7 +16,12 @@ const Sub03 = ({ Content }) => {
       <div className="inner sub_sc">
         <div className='sub_cate'>{Content[num].con} / DOOSI</div>
         <div className="sub_tit b_bottom">{Content[num].con}</div>
+        <div className="content">
+          <h3>THEME SUBSCRIBE</h3>
+          <Theme />
+        </div>
       </div>
+
     </section>
   )
 }

@@ -7,6 +7,8 @@ import { useState } from 'react';
 const Sub04 = ({ Content }) => {
   const num = 3;
 
+  const star = [<FaStar />, <FaStar />, <FaStar />, <FaStar />, <FaStar />]
+
   return (
     <section className='review sub04'>
       <div className="sub_v sc">
@@ -32,7 +34,7 @@ const Sub04 = ({ Content }) => {
                       <p>{it.des01}</p>
                       <p>{it.des02}</p>
                       <p>{it.des03}</p>
-                      <b>{it.star}{it.star}{it.star}{it.star}</b>
+                      <b>{star.slice(0, it.count)}</b>
                     </div>
                   </div>
                 </div>
