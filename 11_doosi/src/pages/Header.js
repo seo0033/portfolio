@@ -14,7 +14,6 @@ const Header = () => {
         </ul>
       </div>
       <div className='line'></div>
-      <div className='line'></div>
       <div className="inner">
         <nav>
           <NavMenu_L />
@@ -29,7 +28,6 @@ const Header = () => {
         </nav>
       </div>
       <div className='line'></div>
-      <div className='line last'></div>
     </header>
   )
 }

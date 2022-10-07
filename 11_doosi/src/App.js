@@ -2,7 +2,9 @@ import { Route, Routes } from 'react-router-dom';
 import Wrapper from './pages/Wrapper';
 import Header from './pages/Header';
 import Main from './pages/Main';
-import Sub01 from './pages/Marcket_P01';
+import Marcket_P01 from './pages/Marcket_P01';
+import Marcket_P02 from './pages/Marcket_P02';
+import Marcket_P03 from './pages/Marcket_P03';
 import Sub02 from './pages/Class';
 import Sub03 from './pages/Subscribe';
 import Sub04 from './pages/Review';
@@ -24,9 +26,9 @@ const App = () => {
       <Header />
       <Routes>
         <Route path='/' element={<Main Content={MAINDATA} />} />
-        <Route path='/sub01/01' element={<Sub01_01 Content={MAINDATA} />} />
-        <Route path='/sub01/02' element={<Sub01_02 Content={MAINDATA} />} />
-        <Route path='/sub01/03' element={<Sub01_03 Content={MAINDATA} />} />
+        <Route path='/sub01/01' element={<Marcket_P01 Content={MAINDATA} />} />
+        <Route path='/sub01/02' element={<Marcket_P02 Content={MAINDATA} />} />
+        <Route path='/sub01/03' element={<Marcket_P03 Content={MAINDATA} />} />
         <Route path='/sub02' element={<Sub02 Content={MAINDATA} />} />
         <Route path='/sub03' element={<Sub03 Content={MAINDATA} />} />
         <Route path='/sub04' element={<Sub04 Content={MAINDATA} />} />

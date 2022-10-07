@@ -1,5 +1,6 @@
 import React from 'react'
-import { THEME } from './DATA'
+import { Link } from 'react-router-dom'
+import { THEME } from './Data'
 
 const Theme = () => {
     return (
@@ -9,27 +10,29 @@ const Theme = () => {
                     return (
                         <>
                             <div className="tit">{it.tit}</div>
-                            <div className="des">{it.des}</div>
+                            <div className="des">
+                                <p>{it.des}</p>
+                                <Link>구독하기</Link>
+                            </div>
                             <div className="stit">
                                 <figure>
                                     <img src={process.env.PUBLIC_URL + "/assets/img/theme_" + it.stit01 + ".jpg"} alt="" />
-                                    <div>{it.stit01}</div>
+                                    <p>{it.stit01}</p>
                                 </figure>
                                 <figure>
                                     <img src={process.env.PUBLIC_URL + "/assets/img/theme_" + it.stit02 + ".jpg"} alt="" />
-                                    <div>{it.stit02}</div>
+                                    <p>{it.stit02}</p>
                                 </figure>
                                 <figure>
                                     <img src={process.env.PUBLIC_URL + "/assets/img/theme_" + it.stit03 + ".jpg"} alt="" />
-                                    <div>{it.stit03}</div>
+                                    <p>{it.stit03}</p>
                                 </figure>
                                 <figure>
                                     <img src={process.env.PUBLIC_URL + "/assets/img/theme_" + it.stit04 + ".jpg"} alt="" />
-                                    <div>{it.stit04}</div>
+                                    <p>{it.stit04}</p>
                                 </figure>
 
                             </div>
-
                         </>
                     )
                 })

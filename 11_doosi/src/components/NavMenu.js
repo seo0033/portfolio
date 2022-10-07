@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { NAVLINK } from './DATA'
+import { NAVLINK } from './Data'
 
 const NavMenu_L = () => {
     return (

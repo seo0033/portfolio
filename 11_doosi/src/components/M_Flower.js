@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { CATEGORY, PRODUCT_01 } from './DATA'
+import { CATEGORY, PRODUCT_01 } from './Data'
 
 const M_FLOWER = () => {
     return (

@@ -13,7 +13,7 @@ const Class = () => {
         <section className='Class'>
             <div className="inner">
                 <div className="C_left">
-                    <figure><img src={process.env.PUBLIC_URL + "/assets/img/class.jpg"} alt="" /></figure>
+                    <figure><img src={process.env.PUBLIC_URL + "/assets/img/m_class.jpg"} alt="" /></figure>
                 </div>
                 <div className="C_right">
                     <div className="circle">

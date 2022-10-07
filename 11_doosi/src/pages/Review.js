@@ -1,5 +1,5 @@
 import React from 'react'
-import { REVIEW } from '../components/DATA';
+import { REVIEW } from '../components/Data';
 import '../css/Spage.scss'
 import { FaStar } from "react-icons/fa";
 import { useState } from 'react';
@@ -9,7 +9,7 @@ const Review = ({ Content }) => {
   const star = [<FaStar />, <FaStar />, <FaStar />, <FaStar />, <FaStar />]
 
   return (
-    <section className='review'>
+    <section className='review sub'>
       <div className="sub_v sc">
         <figure>
           <img src={process.env.PUBLIC_URL + "/assets/img/sub_bg_04.png"} alt="" />

@@ -1,12 +1,12 @@
 import React from 'react'
-import { CATEGORY } from '../components/DATA';
+import { CATEGORY } from '../components/Data';
 import Theme from '../components/Theme';
 import '../css/Spage.scss'
 
 const Subscribe = ({ Content }) => {
   const num = 2;
   return (
-    <section className='subscribe'>
+    <section className='subscribe sub'>
       <div className="sub_v sc">
         <figure>
           <img src={process.env.PUBLIC_URL + "/assets/img/sub_bg_03.jpg"} alt="" />
@@ -16,10 +16,11 @@ const Subscribe = ({ Content }) => {
       <div className="inner sub_sc">
         <div className='sub_cate'>{Content[num].con} / DOOSI</div>
         <div className="sub_tit b_bottom">{Content[num].con}</div>
-      </div>
-      <div className="content">
-        <h3>THEME SUBSCRIBE</h3>
-        <Theme />
+        <div className="content">
+          <h3>THEME SUBSCRIBE</h3>
+          <div className="line"></div>
+          <Theme />
+        </div>
       </div>
     </section>
   )

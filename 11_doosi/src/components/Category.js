@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { CATEGORY } from './DATA'
+import { CATEGORY } from './Data'
 
 const Category = () => {
     return (

@@ -8,7 +8,6 @@ const Footer = () => {
     return (
         <footer className='Footer'>
             <div className='line'></div>
-            <div className='line'></div>
             <div className="inner">
                 <h2>
                     <Link to='/'>
@@ -36,7 +35,7 @@ const Footer = () => {
                     </div>
 
                     <div className="sns">
-                        <span><FaFacebookF className='icon'/></span>
+                        <span><FaFacebookF className='icon' /></span>
                         <span><FaInstagram /></span>
                         <span><FaPinterestP /></span>
                         <span><FaTwitter /></span>

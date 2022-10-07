@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { S_CONTENT } from './DATA'
+import { S_CONTENT } from './Data'
 
 const Subscribe = () => {
     return (

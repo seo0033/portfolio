@@ -4,10 +4,17 @@
     border-bottom: 3px solid basic.$m_c;
 }
 
-.sub_v {
-    position: relative;
+.sub {
     font-family: basic.$hah_f;
     color: basic.$m_c;
+}
+
+.content {
+    padding: 50px 0 0 0;
+}
+
+.sub_v {
+    position: relative;
 
     figure {
         height: 400px;
@@ -30,8 +37,6 @@
 
 .sub_sc {
     padding: 100px 0;
-    font-family: basic.$hah_f;
-    color: basic.$m_c;
 
     .sub_cate {
         margin: 0 0 15px 0;
@@ -67,17 +72,13 @@
         .tab_pd {
             margin: 0 0 0 30px;
             text-align: center;
-
-            .box {
-                display: grid;
-                flex-wrap: wrap;
-                grid-template-columns: repeat(3, 1fr);
-            }
-
+            display: grid;
+            flex-wrap: wrap;
+            grid-template-columns: repeat(3, 1fr);
             font-size: 17px;
             font-weight: 500;
 
-            figure {
+            .box {
                 padding: 15px;
                 // border: 1px solid basic.$txt_c;
 
@@ -105,7 +106,53 @@
 
 }
 
-//class sub02
+//subscribe sub03
+.subscribe {
+    .content {
+
+        h3 {
+            margin: 0 0 10px 0;
+            font-size: 35px;
+            font-weight: 700;
+        }
+
+        .tit {
+            margin: 50px 0 10px 0;
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        .des {
+            margin: 0 0 50px 0;
+            padding: 0 0 15px 0;
+            border-bottom: 3px solid basic.$m_c;
+        }
+
+        .theme {
+            .des {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .stit {
+                display: flex;
+                justify-content: space-between;
+
+                figure {
+                    border: 3px solid basic.$m_c;
+
+                    p {
+                        border-top: 3px solid basic.$m_c;
+                        padding: 5px 0;
+                        text-align: center;
+                        font-size: 15px;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}
 
 //review sub04
 .review {

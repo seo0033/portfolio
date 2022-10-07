@@ -1,14 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { CATEGORY } from '../components/DATA';
-import M_Plant from '../components/M_Plant';
+import { CATEGORY } from '../components/Data';
+import M_Prop from '../components/M_Prop';
 import '../css/Spage.scss'
 
 
-const Sub01_02 = ({ Content }) => {
+const Sub01_03 = ({ Content }) => {
     const num = 0;
     return (
-        <section className='marcket sub01_02'>
+        <section className='marcket prop sub'>
             <div className="sub_v sc">
                 <figure>
                     <img src={process.env.PUBLIC_URL + "/assets/img/sub_bg_01.png"} alt="" />
@@ -18,10 +18,12 @@ const Sub01_02 = ({ Content }) => {
             <div className="inner sub_sc">
                 <div className='sub_cate'>{Content[num].con} / {CATEGORY[0].tit}</div>
                 <div className="sub_tit b_bottom">{CATEGORY[0].tit}</div>
-                <M_Plant />
+                <div className="content">
+                    <M_Prop />
+                </div>
             </div>
         </section>
     )
 }
 
-export default Sub01_02
+export default Sub01_03
