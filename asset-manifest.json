@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/portfolio/11_doosi/static/css/main.1241fd24.css",
+    "main.js": "/portfolio/11_doosi/static/js/main.c4e322fe.js",
+    "static/media/main_v_01.jpg": "/portfolio/11_doosi/static/media/main_v_01.17be5dbc766a6b240aea.jpg",
+    "static/media/main_v_03.jpg": "/portfolio/11_doosi/static/media/main_v_03.31f6b1f026ffc5fb45da.jpg",
+    "static/media/main_v_02.jpg": "/portfolio/11_doosi/static/media/main_v_02.a9c7d84f60e0db3f45e2.jpg",
+    "index.html": "/portfolio/11_doosi/index.html",
+    "main.1241fd24.css.map": "/portfolio/11_doosi/static/css/main.1241fd24.css.map",
+    "main.c4e322fe.js.map": "/portfolio/11_doosi/static/js/main.c4e322fe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1241fd24.css",
+    "static/js/main.c4e322fe.js"
+  ]
+}
